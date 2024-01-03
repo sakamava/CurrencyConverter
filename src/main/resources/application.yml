@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Currency Converter
+#  webflux:
+#    base-path: /cc
+
+server:
+  port: 8080
+
+
+exchange-rate:
+  api:
+    url: "http://api.exchangeratesapi.io/"
+    rates-path: "v1/latest"
+    symbols-path: "v1/symbols"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        #        include: info, health, metrics
