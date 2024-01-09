@@ -48,7 +48,7 @@ public class ExchangeRateConnector implements IExchangeRateConnector {
 	}
 	
 	private String getAccessKey() {
-        return environment.getProperty("EXCHANGE_RATE_ACCESS_KEY");
-    }
+                return environment.getProperty("EXCHANGE_RATE_ACCESS_KEY");
+        }
 	
 }
