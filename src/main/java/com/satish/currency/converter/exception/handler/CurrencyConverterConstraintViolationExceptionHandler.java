@@ -18,8 +18,8 @@ import com.satish.currency.converter.util.CurrencyConverterMapper;
 @ControllerAdvice
 public class CurrencyConverterConstraintViolationExceptionHandler {
 
-	@Autowired
-	CurrencyConverterMapper currencyConverterMapper;
+    @Autowired
+    CurrencyConverterMapper currencyConverterMapper;
 	
     @ExceptionHandler({ConstraintViolationException.class,MethodArgumentNotValidException.class, BindException.class, WebExchangeBindException.class})
     public ResponseEntity<Status> handleException(Exception e) {
