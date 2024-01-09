@@ -5,13 +5,13 @@ public class CurrencyConverterException extends RuntimeException {
 	private static final long serialVersionUID = 1L;
 	private final String errorCode;
 	
-    public String getErrorCode() {
+        public String getErrorCode() {
 		return errorCode;
 	}
 
 	public CurrencyConverterException(final String errorCode, final String message) {
-        super(message);
-        this.errorCode = errorCode;
-    }
+        	super(message);
+        	this.errorCode = errorCode;
+        }
 	
 }
