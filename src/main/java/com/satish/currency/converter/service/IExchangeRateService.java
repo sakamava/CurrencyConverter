@@ -13,6 +13,6 @@ public interface IExchangeRateService
 	
 	Mono<SupportedSymbolsResponse> getSymbols();
 	
-    Mono<ConversionResponse> performConversion(ConversionRequest request);
+        Mono<ConversionResponse> performConversion(ConversionRequest request);
 
 }
