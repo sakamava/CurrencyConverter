@@ -20,7 +20,7 @@ public class ExchangeRateConnector implements IExchangeRateConnector {
 	
 	
 	@Autowired
-    Environment environment;
+        Environment environment;
 	
 	@Value("${exchange-rate.api.rates-path}")
 	private String latestPath;
